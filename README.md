@@ -1,16 +1,13 @@
-# messenger
+<h1 align="center">Messenger</h1>
 
-A new Flutter project.
+<div align="center">
+  A simple messenger app.
+</div>
 
-## Getting Started
+<h2 align="center">Screenshots</h2>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="middle" float="left">
+  <img src="assets\previews\preview1.png" alt="Preview 1" width="310.5" height="552">
+  <img src="assets\previews\preview2.png" alt="Preview 2" width="310.5" height="552">
+  <img src="assets\previews\preview3.png" alt="Preview 3" width="310.5" height="552">
+</p>
