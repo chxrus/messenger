@@ -109,7 +109,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                     const SizedBox(height: 16),
                     TextButton(
-                      onPressed: () => GetIt.I<AppRouter>().pushNamed('/'),
+                      onPressed: () => GetIt.I<AppRouter>().replaceNamed('/'),
                       child: Text(S.of(context).alreadyRegistered),
                     )
                   ],

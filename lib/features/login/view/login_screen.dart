@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(height: 16),
                   TextButton(
                     onPressed: () =>
-                        GetIt.I<AppRouter>().pushNamed('/register'),
+                        GetIt.I<AppRouter>().replaceNamed('/register'),
                     child: Text(S.of(context).notRegistered),
                   )
                 ],
