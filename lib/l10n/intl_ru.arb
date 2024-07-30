@@ -1,0 +1,19 @@
+{
+  "homeTitle": "Сообщения",
+  "loginTitle": "Вход",
+  "registerTitle": "Регистрация",
+  "email": "Эл. почта",
+  "password": "Пароль",
+  "loginButton": "Войти",
+  "registerButton": "Зарегистрироваться",
+  "newPassword": "Новый пароль",
+  "confirmPassword": "Подтвердите пароль",
+  "alreadyRegistered": "Уже зарегестрированы? Войти",
+  "notRegistered": "Нет аккаунта? Регистрация",
+  "errorTryAgain": "Произошла ошибка. Пожалуйста, повторите попытку позже",
+  "loading": "Загрузка..",
+  "loadingError": "Ошибка загрузки",
+  "logOut": "Выйти",
+  "writeMessage": "Написать сообщение...",
+  "darkTheme": "Темная тема"
+}

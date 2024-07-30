@@ -1,0 +1,19 @@
+{
+  "homeTitle": "Messenger",
+  "loginTitle": "Login",
+  "registerTitle": "Register",
+  "email": "Email",
+  "password": "Password",
+  "loginButton": "Login",
+  "registerButton": "Register",
+  "newPassword": "New password",
+  "confirmPassword": "Confirm password",
+  "alreadyRegistered": "Already registered? Sign in",
+  "notRegistered": "Don't have an account? Register",
+  "errorTryAgain": "An error occured. Please try again later",
+  "loading": "Loading..",
+  "loadingError": "Loading error",
+  "logOut": "Log out",
+  "writeMessage": "Write a message...",
+  "darkTheme": "Dark Theme"
+}
