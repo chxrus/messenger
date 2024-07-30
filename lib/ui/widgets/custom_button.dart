@@ -16,11 +16,11 @@ class CustomButton extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 6,
-            offset: Offset(0, 1),
-            color: Colors.black12,
+            offset: const Offset(0, 1),
+            color: theme.colorScheme.onSurface.withOpacity(.25),
           ),
         ],
       ),
