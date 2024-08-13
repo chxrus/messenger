@@ -10,6 +10,7 @@ final textTheme = TextTheme(
   ),
   titleSmall: GoogleFonts.raleway(
     fontSize: 20,
+    fontWeight: FontWeight.w600,
   ),
   labelMedium: GoogleFonts.roboto(
     fontSize: 18,
@@ -28,20 +29,20 @@ final darkTheme = ThemeData(
   ),
   primaryColor: primaryColor,
   textTheme: textTheme,
+  dividerColor: Colors.grey[900]!,
   appBarTheme: AppBarTheme(
     elevation: 0,
     scrolledUnderElevation: 0,
-    foregroundColor: Colors.black,
-    backgroundColor: Colors.transparent,
+    backgroundColor: Colors.grey[900],
     centerTitle: true,
     titleTextStyle: textTheme.titleSmall?.copyWith(
-      color: Colors.white70,
+      color: Colors.white,
     ),
     actionsIconTheme: const IconThemeData(
-      color: Colors.white70,
+      color: Colors.white,
     ),
     iconTheme: const IconThemeData(
-      color: Colors.white70,
+      color: Colors.white,
     ),
   ),
 );
@@ -53,20 +54,19 @@ final lightTheme = ThemeData(
   ),
   primaryColor: primaryColor,
   textTheme: textTheme,
+  dividerColor: Colors.indigo[100]!,
   appBarTheme: AppBarTheme(
     elevation: 0,
     scrolledUnderElevation: 0,
-    foregroundColor: Colors.white,
-    backgroundColor: Colors.transparent,
     centerTitle: true,
     titleTextStyle: textTheme.titleSmall?.copyWith(
-      color: Colors.black87,
+      color: Colors.black,
     ),
     actionsIconTheme: const IconThemeData(
-      color: Colors.black87,
+      color: Colors.black,
     ),
     iconTheme: const IconThemeData(
-      color: Colors.black87,
+      color: Colors.black,
     ),
   ),
 );
