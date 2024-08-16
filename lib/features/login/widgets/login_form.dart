@@ -24,7 +24,7 @@ class LoginForm extends StatelessWidget {
             ..showSnackBar(
               SnackBar(
                 content: Text(
-                  state.errorMessage ?? S.of(context).signInSuccess,
+                  S.of(context).signInSuccess,
                   style: theme.textTheme.bodyLarge?.copyWith(
                     color: theme.colorScheme.onPrimary,
                   ),

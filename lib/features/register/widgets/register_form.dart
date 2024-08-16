@@ -23,7 +23,7 @@ class RegisterForm extends StatelessWidget {
             ..showSnackBar(
               SnackBar(
                 content: Text(
-                  state.errorMessage ?? S.of(context).signUpSuccess,
+                  S.of(context).signUpSuccess,
                   style: theme.textTheme.bodyLarge?.copyWith(
                     color: theme.colorScheme.onPrimary,
                   ),
