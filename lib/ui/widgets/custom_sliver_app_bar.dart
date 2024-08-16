@@ -11,6 +11,7 @@ class CustomSliverAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appBarTheme = Theme.of(context).appBarTheme;
+
     return SliverAppBar(
       iconTheme: appBarTheme.iconTheme,
       actionsIconTheme: appBarTheme.actionsIconTheme,
