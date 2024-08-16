@@ -30,8 +30,8 @@ class AppRouter extends RootStackRouter {
         CustomRoute(
           page: ChatRoute.page,
           transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
-          durationInMilliseconds: 125,
-          reverseDurationInMilliseconds: 125,
+          durationInMilliseconds: 250,
+          reverseDurationInMilliseconds: 150,
         ),
       ];
 }
