@@ -7,38 +7,31 @@ class CustomButton extends StatelessWidget {
     required this.label,
   });
 
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final String label;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Container(
-      decoration: BoxDecoration(
+
+    return Material(
+      borderRadius: BorderRadius.circular(12),
+      clipBehavior: Clip.antiAliasWithSaveLayer,
+      color: onPressed != null
+          ? theme.colorScheme.primary
+          : theme.colorScheme.surfaceContainer,
+      child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(
-            blurRadius: 6,
-            offset: const Offset(0, 1),
-            color: theme.colorScheme.onSurface.withOpacity(.25),
-          ),
-        ],
-      ),
-      child: Material(
-        borderRadius: BorderRadius.circular(12),
-        clipBehavior: Clip.antiAliasWithSaveLayer,
-        color: theme.colorScheme.primary,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          onTap: onPressed,
-          child: Container(
-            padding: const EdgeInsets.all(12),
-            child: Center(
-              child: Text(
-                label,
-                style: theme.textTheme.labelMedium
-                    ?.copyWith(color: theme.colorScheme.onPrimary),
-              ),
+        onTap: onPressed,
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          child: Center(
+            child: Text(
+              label,
+              style: theme.textTheme.labelMedium?.copyWith(
+                  color: onPressed != null
+                      ? theme.colorScheme.onPrimary
+                      : theme.colorScheme.onSurface.withOpacity(.5)),
             ),
           ),
         ),
