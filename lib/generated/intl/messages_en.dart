@@ -26,22 +26,34 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Already registered? Sign in"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm password"),
-        "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
+        "darkTheme": MessageLookupByLibrary.simpleMessage("Dark theme"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "errorTryAgain": MessageLookupByLibrary.simpleMessage(
             "An error occured. Please try again later"),
         "homeTitle": MessageLookupByLibrary.simpleMessage("Messenger"),
+        "invalidConfirmPassword":
+            MessageLookupByLibrary.simpleMessage("Invalid confirm password"),
+        "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid Email"),
+        "invalidName": MessageLookupByLibrary.simpleMessage("Invalid Name"),
+        "invalidPassword":
+            MessageLookupByLibrary.simpleMessage("Invalid password"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading.."),
         "loadingError": MessageLookupByLibrary.simpleMessage("Loading error"),
         "logOut": MessageLookupByLibrary.simpleMessage("Log out"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("Login"),
-        "newPassword": MessageLookupByLibrary.simpleMessage("New password"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
         "notRegistered": MessageLookupByLibrary.simpleMessage(
             "Don\'t have an account? Register"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
         "registerTitle": MessageLookupByLibrary.simpleMessage("Register"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "signInError": MessageLookupByLibrary.simpleMessage("Sign in error"),
+        "signInSuccess": MessageLookupByLibrary.simpleMessage("Welcome back!"),
+        "signUpError": MessageLookupByLibrary.simpleMessage("Sign up error"),
+        "signUpSuccess": MessageLookupByLibrary.simpleMessage(
+            "You\'ve successfully registered!"),
         "writeMessage":
             MessageLookupByLibrary.simpleMessage("Write a message...")
       };

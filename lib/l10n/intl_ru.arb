@@ -15,5 +15,15 @@
   "loadingError": "Ошибка загрузки",
   "logOut": "Выйти",
   "writeMessage": "Написать сообщение...",
-  "darkTheme": "Темная тема"
+  "darkTheme": "Темная тема",
+  "search": "Поиск",
+  "namee": "Имя",
+  "invalidName": "Недопустимое имя",
+  "invalidEmail": "Недопустимая почта",
+  "invalidPassword": "Недопустимый пароль",
+  "invalidConfirmPassword": "Неправильный повтор пароля",
+  "signUpError": "Ошибка регистрации",
+  "signInError": "Ошибка входа",
+  "signUpSuccess": "Вы успешно зарегестрировались!",
+  "signInSuccess": "С возвращением!"
 }

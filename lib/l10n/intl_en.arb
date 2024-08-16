@@ -6,7 +6,6 @@
   "password": "Password",
   "loginButton": "Login",
   "registerButton": "Register",
-  "newPassword": "New password",
   "confirmPassword": "Confirm password",
   "alreadyRegistered": "Already registered? Sign in",
   "notRegistered": "Don't have an account? Register",
@@ -15,5 +14,15 @@
   "loadingError": "Loading error",
   "logOut": "Log out",
   "writeMessage": "Write a message...",
-  "darkTheme": "Dark Theme"
+  "darkTheme": "Dark theme",
+  "search": "Search",
+  "name": "Name",
+  "invalidName": "Invalid Name",
+  "invalidEmail": "Invalid Email",
+  "invalidPassword": "Invalid password",
+  "invalidConfirmPassword": "Invalid confirm password",
+  "signUpError": "Sign up error",
+  "signInError": "Sign in error",
+  "signUpSuccess": "You've successfully registered!",
+  "signInSuccess": "Welcome back!"
 }

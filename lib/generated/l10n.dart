@@ -120,16 +120,6 @@ class S {
     );
   }
 
-  /// `New password`
-  String get newPassword {
-    return Intl.message(
-      'New password',
-      name: 'newPassword',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Confirm password`
   String get confirmPassword {
     return Intl.message(
@@ -210,11 +200,111 @@ class S {
     );
   }
 
-  /// `Dark Theme`
+  /// `Dark theme`
   String get darkTheme {
     return Intl.message(
-      'Dark Theme',
+      'Dark theme',
       name: 'darkTheme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Name`
+  String get invalidName {
+    return Intl.message(
+      'Invalid Name',
+      name: 'invalidName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Email`
+  String get invalidEmail {
+    return Intl.message(
+      'Invalid Email',
+      name: 'invalidEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid password`
+  String get invalidPassword {
+    return Intl.message(
+      'Invalid password',
+      name: 'invalidPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid confirm password`
+  String get invalidConfirmPassword {
+    return Intl.message(
+      'Invalid confirm password',
+      name: 'invalidConfirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up error`
+  String get signUpError {
+    return Intl.message(
+      'Sign up error',
+      name: 'signUpError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in error`
+  String get signInError {
+    return Intl.message(
+      'Sign in error',
+      name: 'signInError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You've successfully registered!`
+  String get signUpSuccess {
+    return Intl.message(
+      'You\'ve successfully registered!',
+      name: 'signUpSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome back!`
+  String get signInSuccess {
+    return Intl.message(
+      'Welcome back!',
+      name: 'signInSuccess',
       desc: '',
       args: [],
     );

@@ -31,18 +31,32 @@ class MessageLookup extends MessageLookupByLibrary {
         "errorTryAgain": MessageLookupByLibrary.simpleMessage(
             "Произошла ошибка. Пожалуйста, повторите попытку позже"),
         "homeTitle": MessageLookupByLibrary.simpleMessage("Сообщения"),
+        "invalidConfirmPassword":
+            MessageLookupByLibrary.simpleMessage("Неправильный повтор пароля"),
+        "invalidEmail":
+            MessageLookupByLibrary.simpleMessage("Недопустимая почта"),
+        "invalidName": MessageLookupByLibrary.simpleMessage("Недопустимое имя"),
+        "invalidPassword":
+            MessageLookupByLibrary.simpleMessage("Недопустимый пароль"),
         "loading": MessageLookupByLibrary.simpleMessage("Загрузка.."),
         "loadingError": MessageLookupByLibrary.simpleMessage("Ошибка загрузки"),
         "logOut": MessageLookupByLibrary.simpleMessage("Выйти"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Войти"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("Вход"),
-        "newPassword": MessageLookupByLibrary.simpleMessage("Новый пароль"),
         "notRegistered":
             MessageLookupByLibrary.simpleMessage("Нет аккаунта? Регистрация"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "registerButton":
             MessageLookupByLibrary.simpleMessage("Зарегистрироваться"),
         "registerTitle": MessageLookupByLibrary.simpleMessage("Регистрация"),
+        "search": MessageLookupByLibrary.simpleMessage("Поиск"),
+        "signInError": MessageLookupByLibrary.simpleMessage("Ошибка входа"),
+        "signInSuccess":
+            MessageLookupByLibrary.simpleMessage("С возвращением!"),
+        "signUpError":
+            MessageLookupByLibrary.simpleMessage("Ошибка регистрации"),
+        "signUpSuccess": MessageLookupByLibrary.simpleMessage(
+            "Вы успешно зарегестрировались!"),
         "writeMessage":
             MessageLookupByLibrary.simpleMessage("Написать сообщение...")
       };
