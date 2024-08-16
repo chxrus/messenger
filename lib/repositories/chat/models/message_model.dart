@@ -22,14 +22,14 @@ final class MessageModel extends Equatable {
     String? senderID,
     String? senderEmail,
     String? receiverID,
-    String? receiverEmail,
+    String? message,
     Timestamp? timestamp,
   }) {
     return MessageModel(
       senderID: senderID ?? this.senderID,
       senderEmail: senderEmail ?? this.senderEmail,
       receiverID: receiverID ?? this.receiverID,
-      message: receiverEmail ?? message,
+      message: message ?? this.message,
       timestamp: timestamp ?? this.timestamp,
     );
   }
@@ -39,7 +39,7 @@ final class MessageModel extends Equatable {
       'senderID': senderID,
       'senderEmail': senderEmail,
       'receiverID': receiverID,
-      'receiverEmail': message,
+      'message': message,
       'timestamp': timestamp,
     };
   }
@@ -49,7 +49,7 @@ final class MessageModel extends Equatable {
       senderID: map['senderID'] as String,
       senderEmail: map['senderEmail'] as String,
       receiverID: map['receiverID'] as String,
-      message: map['receiverEmail'] as String,
+      message: map['message'] as String,
       timestamp: map['timestamp'] as Timestamp,
     );
   }
@@ -61,7 +61,7 @@ final class MessageModel extends Equatable {
 
   @override
   String toString() {
-    return 'MessageModel(senderID: $senderID, senderEmail: $senderEmail, receiverID: $receiverID, receiverEmail: $message, timestamp: $timestamp)';
+    return 'MessageModel(senderID: $senderID, senderEmail: $senderEmail, receiverID: $receiverID, message: $message, timestamp: $timestamp)';
   }
 
   @override
