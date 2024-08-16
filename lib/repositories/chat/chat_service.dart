@@ -1,18 +1,19 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:messenger/repositories/auth/models/models.dart';
 import 'package:messenger/repositories/chat/abstract_chat_service.dart';
 import 'package:messenger/repositories/chat/models/message_model.dart';
 
-final class ChatService implements AbstractChatService {
+final class ChatService implements IChatService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   @override
-  Stream<List<Map<String, dynamic>>> getUsersStream() {
+  Stream<List<UserModel>> getUsersStream() {
     return _firestore.collection('Users').snapshots().map((snapshot) {
       return snapshot.docs.map((doc) {
         final user = doc.data();
-        return user;
+        return UserModel.fromMap(user);
       }).toList();
     });
   }
