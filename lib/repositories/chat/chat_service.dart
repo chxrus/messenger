@@ -52,7 +52,7 @@ final class ChatService implements AbstractChatService {
         .collection('ChatRooms')
         .doc(chatRoomID)
         .collection('Messages')
-        .orderBy("timestamp", descending: false)
+        .orderBy('timestamp', descending: false)
         .snapshots();
   }
 }
