@@ -4,12 +4,15 @@ import 'package:messenger/features/chat/view/chat_screen.dart';
 import 'package:messenger/features/home/view/home_screen.dart';
 import 'package:messenger/features/login/view/login_screen.dart';
 import 'package:messenger/features/register/view/register_screen.dart';
-import 'package:messenger/repositories/chat/models/user_model.dart';
+import 'package:messenger/repositories/auth/models/user_model.dart';
 
 part 'router.gr.dart';
 
-@AutoRouterConfig(replaceInRouteName: 'Screen,Route')
-class AppRouter extends _$AppRouter {
+@AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
+class AppRouter extends RootStackRouter {
+  @override
+  RouteType get defaultRouteType => const RouteType.material();
+
   @override
   List<AutoRoute> get routes => [
         CustomRoute(
