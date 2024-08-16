@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:messenger/firebase_options.dart';
@@ -34,6 +35,11 @@ void main() async {
     FlutterError.onError =
         (details) => GetIt.I<Talker>().handle(details.exception, details.stack);
 
-    runApp(const App());
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]).then((_) {
+      runApp(const App());
+    });
   }, (error, stack) => GetIt.I<Talker>().handle(error, stack));
 }
