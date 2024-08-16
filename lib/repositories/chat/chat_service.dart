@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:messenger/repositories/auth/models/models.dart';
-import 'package:messenger/repositories/chat/abstract_chat_service.dart';
+import 'package:messenger/repositories/chat/i_chat_service.dart';
 import 'package:messenger/repositories/chat/models/message_model.dart';
 
 final class ChatService implements IChatService {
