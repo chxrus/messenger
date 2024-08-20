@@ -3,20 +3,22 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
-    required this.label,
+    this.label,
     this.isObscure = false,
     this.controller,
     this.errorText,
     this.keyboardType,
     this.onChanged,
+    this.decoration,
   });
 
-  final String label;
+  final String? label;
   final bool isObscure;
   final TextEditingController? controller;
   final ValueChanged<String>? onChanged;
   final TextInputType? keyboardType;
   final String? errorText;
+  final InputDecoration? decoration;
 
   @override
   Widget build(BuildContext context) {
@@ -28,39 +30,40 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       obscureText: isObscure,
       style: theme.textTheme.labelMedium,
-      decoration: InputDecoration(
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: theme.colorScheme.surfaceContainerHigh,
-            width: 2,
+      decoration: decoration ??
+          InputDecoration(
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(
+                color: theme.colorScheme.surfaceContainerHigh,
+                width: 2,
+              ),
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(
+                width: 2,
+                color: theme.colorScheme.error,
+              ),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(
+                width: 2,
+                color: theme.colorScheme.primary,
+              ),
+            ),
+            fillColor: theme.cardColor,
+            labelText: label,
+            labelStyle: theme.textTheme.labelMedium?.copyWith(
+              color: theme.colorScheme.onSurface.withOpacity(.75),
+            ),
+            errorText: errorText,
+            filled: true,
           ),
-        ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            width: 2,
-            color: theme.colorScheme.error,
-          ),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            width: 2,
-            color: theme.colorScheme.primary,
-          ),
-        ),
-        fillColor: theme.cardColor,
-        labelText: label,
-        labelStyle: theme.textTheme.labelMedium?.copyWith(
-          color: theme.colorScheme.onSurface.withOpacity(.75),
-        ),
-        errorText: errorText,
-        filled: true,
-      ),
     );
   }
 }
