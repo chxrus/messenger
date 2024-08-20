@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:messenger/repositories/chat/models/message_model.dart';
 
 class MessageTile extends StatelessWidget {
-  const MessageTile(
-      {super.key, required this.messageModel, required this.isCurrentUser});
+  const MessageTile({
+    super.key,
+    required this.messageModel,
+    required this.isCurrentUser,
+  });
 
   final MessageModel messageModel;
   final bool isCurrentUser;
@@ -30,7 +33,7 @@ class MessageTile extends StatelessWidget {
             ),
             child: Text(
               messageModel.message,
-              style: theme.textTheme.labelMedium?.copyWith(
+              style: theme.textTheme.labelSmall?.copyWith(
                 color: isCurrentUser
                     ? theme.colorScheme.onPrimaryContainer
                     : theme.colorScheme.onSecondaryContainer,
@@ -43,7 +46,9 @@ class MessageTile extends StatelessWidget {
                 : const EdgeInsets.only(top: 4, left: 4),
             child: Text(
               _formattedTime(),
-              style: const TextStyle(color: Colors.grey, fontSize: 12),
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
             ),
           ),
           const SizedBox(height: 8),
@@ -56,11 +61,11 @@ class MessageTile extends StatelessWidget {
     String hours = messageModel.timestamp.toDate().hour.toString();
     String minutes = messageModel.timestamp.toDate().minute.toString();
     if (hours.length == 1) {
-      hours = "0$hours";
+      hours = '0$hours';
     }
     if (minutes.length == 1) {
-      minutes = "0$minutes";
+      minutes = '0$minutes';
     }
-    return "$hours:$minutes";
+    return '$hours:$minutes';
   }
 }
