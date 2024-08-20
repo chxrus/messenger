@@ -29,7 +29,7 @@ class ChatScreen extends StatelessWidget {
     return BlocProvider(
       create: (context) => ChatBloc(
           chatService: context.read<IChatService>(),
-          user: context.watch<AuthBloc>().state.currentUser,
+          user: context.read<AuthBloc>().state.currentUser,
           anotherUser: user)
         ..add(const ChatLoadEvent()),
       child: Scaffold(
