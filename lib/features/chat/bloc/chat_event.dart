@@ -15,11 +15,10 @@ final class ChatLoadEvent extends ChatEvent {
 }
 
 final class ChatSendMessageEvent extends ChatEvent {
-  const ChatSendMessageEvent({required this.message, this.completer});
+  const ChatSendMessageEvent({required this.message});
 
   final String message;
-  final Completer? completer;
 
   @override
-  List<Object?> get props => [message, completer];
+  List<Object?> get props => [message];
 }
