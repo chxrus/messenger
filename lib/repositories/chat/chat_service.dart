@@ -44,7 +44,8 @@ final class ChatService implements IChatService {
   }
 
   @override
-  Stream<QuerySnapshot> getMessagesStream(String userID, String otherUserID) {
+  Stream<List<MessageModel>> getMessagesStream(
+      String userID, String otherUserID) {
     List<String> ids = [userID, otherUserID];
     ids.sort();
     String chatRoomID = ids.join('_');
@@ -54,6 +55,11 @@ final class ChatService implements IChatService {
         .doc(chatRoomID)
         .collection('Messages')
         .orderBy('timestamp', descending: false)
-        .snapshots();
+        .snapshots()
+        .map(
+          (snapshot) => snapshot.docs
+              .map((message) => MessageModel.fromMap(message.data()))
+              .toList(),
+        );
   }
 }
