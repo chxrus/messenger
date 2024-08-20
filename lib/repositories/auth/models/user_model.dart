@@ -60,4 +60,9 @@ class UserModel extends Equatable {
       photoURL: photoURL ?? this.photoURL,
     );
   }
+
+  @override
+  String toString() {
+    return 'UserModel(id: $id, email: $email, name: $name, photoURL: $photoURL)';
+  }
 }
