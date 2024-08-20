@@ -36,7 +36,6 @@ class _ProfileHeaderState extends State<ProfileHeader> {
                 builder: (context, state) {
                   final photoURL = context.select(
                       (AuthBloc value) => value.state.currentUser.photoURL);
-                  GetIt.I<Talker>().error('photoURL: $photoURL');
                   return GestureDetector(
                     onTap: () async => await _changeAvatar(),
                     child: ClipRRect(
