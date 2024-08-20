@@ -46,8 +46,8 @@ final class ChatSendingFailureState extends ChatState {
   List<Object?> get props => [];
 }
 
-final class ChatSendedMessageState extends ChatState {
-  const ChatSendedMessageState({this.exception});
+final class ChatSentMessageState extends ChatState {
+  const ChatSentMessageState({this.exception});
 
   final Object? exception;
 
