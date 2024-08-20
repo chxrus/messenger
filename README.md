@@ -14,5 +14,5 @@
   <img src="assets\previews\preview1.png" alt="Preview 1" width="190">
   <img src="assets\previews\preview2.png" alt="Preview 2" width="190">
   <img src="assets\previews\preview3.png" alt="Preview 3" width="190">
-  <img src="assets\previews\preview3.png" alt="Preview 4" width="190">
+  <img src="assets\previews\preview4.png" alt="Preview 4" width="190">
 </p>
