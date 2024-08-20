@@ -3,12 +3,10 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get_it/get_it.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:messenger/bloc/auth/auth_bloc.dart';
 import 'package:messenger/features/settings_drawer/bloc/settings_bloc.dart';
 import 'package:messenger/generated/l10n.dart';
-import 'package:talker_flutter/talker_flutter.dart';
 
 class ProfileHeader extends StatefulWidget {
   const ProfileHeader({
