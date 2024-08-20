@@ -58,7 +58,7 @@ class _ChatListViewState extends State<ChatListView> {
     return Expanded(
       child: BlocConsumer<ChatBloc, ChatState>(
         listener: (context, state) {
-          if (state is ChatSendedMessageState) {
+          if (state is ChatSentMessageState) {
             _scrollToLastMessage();
           }
         },

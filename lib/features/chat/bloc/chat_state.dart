@@ -45,3 +45,12 @@ final class ChatSendingFailureState extends ChatState {
   @override
   List<Object?> get props => [];
 }
+
+final class ChatSendedMessageState extends ChatState {
+  const ChatSendedMessageState({this.exception});
+
+  final Object? exception;
+
+  @override
+  List<Object?> get props => [];
+}
