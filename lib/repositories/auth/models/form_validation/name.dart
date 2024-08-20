@@ -7,10 +7,10 @@ class Name extends FormzInput<String, NameValidationError> {
 
   const Name.dirty([super.value = '']) : super.dirty();
 
-  static final _passwordRegExp = RegExp(r'^[a-zA-Z]+( [a-zA-Z]+)$');
+  static final _nameRegExp = RegExp(r'^[a-zA-Z]+( [a-zA-Z]+)$');
 
   @override
   NameValidationError? validator(String value) {
-    return _passwordRegExp.hasMatch(value) ? null : NameValidationError.invalid;
+    return _nameRegExp.hasMatch(value) ? null : NameValidationError.invalid;
   }
 }
