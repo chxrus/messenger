@@ -33,8 +33,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "homeTitle": MessageLookupByLibrary.simpleMessage("Messenger"),
         "invalidConfirmPassword":
             MessageLookupByLibrary.simpleMessage("Invalid confirm password"),
-        "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid Email"),
-        "invalidName": MessageLookupByLibrary.simpleMessage("Invalid Name"),
+        "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid email"),
+        "invalidName": MessageLookupByLibrary.simpleMessage("Invalid name"),
         "invalidPassword":
             MessageLookupByLibrary.simpleMessage("Invalid password"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading.."),

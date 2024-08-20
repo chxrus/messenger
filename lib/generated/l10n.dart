@@ -230,20 +230,20 @@ class S {
     );
   }
 
-  /// `Invalid Name`
+  /// `Invalid name`
   String get invalidName {
     return Intl.message(
-      'Invalid Name',
+      'Invalid name',
       name: 'invalidName',
       desc: '',
       args: [],
     );
   }
 
-  /// `Invalid Email`
+  /// `Invalid email`
   String get invalidEmail {
     return Intl.message(
-      'Invalid Email',
+      'Invalid email',
       name: 'invalidEmail',
       desc: '',
       args: [],
