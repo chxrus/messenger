@@ -36,7 +36,7 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^2.4.11
   auto_route_generator: 9.0.0
-
+  flutter_launcher_icons: ^0.13.1
 
   flutter_lints: ^4.0.0
 
@@ -47,3 +47,9 @@ flutter:
 
 flutter_intl:
   enabled: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo 1024x1024.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
