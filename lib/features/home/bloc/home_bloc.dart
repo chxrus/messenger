@@ -45,8 +45,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
             final isNotCurrentUser = user != _authService.currentUser;
             final isSearchEmpty = formattedQuery.isEmpty;
             final satisfiesQuery =
-                (user.email?.contains(formattedQuery) ?? false) ||
-                    (user.name?.contains(formattedQuery) ?? false);
+                (user.email?.toLowerCase().contains(formattedQuery) ?? false) ||
+                    (user.name?.toLowerCase().contains(formattedQuery) ??
+                        false);
             return isNotCurrentUser && (isSearchEmpty || satisfiesQuery);
           }).toList();
         } catch (_) {
